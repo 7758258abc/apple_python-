@@ -64,11 +64,17 @@ for i in range(10):
     except:
         break
 
-# 确定
-xpath_ = '//*[@id="checkout-container"]/div/div[6]/div[1]/div[2]/div/div/div[1]/div/div/div/fieldset/div[1]/div[2]/label'
-取货 = 浏览器对象.find_element_by_xpath(xpath_)
-取货.click()
-time.sleep(0.5)
+
+for i in range(10):
+    try:
+        # 确定
+        xpath_ = '//*[@id="checkout-container"]/div/div[6]/div[1]/div[2]/div/div/div[1]/div/div/div/fieldset/div[1]/div[2]/label'
+        取货 = 浏览器对象.find_element_by_xpath(xpath_)
+        取货.click()
+        time.sleep(0.5)
+        break
+    except:
+        time.sleep(0.3)
 
 if  第一次运行:
     input('程序第一次运行, 在弹出的网页中请手动选择地址并刷新网页, 完成后点击该句子后回车!!!')
