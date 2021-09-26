@@ -10,6 +10,7 @@ apple_python 官网自动监控爬虫
 这里我就先提供  92.0.4515.131 版本的驱动, 理论上  92.0.4515.xxx 的谷歌浏览器都是可以用的
 注意一定要用谷歌浏览器
 
+!!!注意, 安装python的时候记得看图片, 一定要勾选 add python 3.8 to PATH
 
 B站视频传送链接
 https://www.bilibili.com/video/BV1Tg411c7C5#reply5424884699
