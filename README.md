@@ -11,6 +11,8 @@ apple_python 官网自动监控爬虫
 注意一定要用谷歌浏览器
 
 !!!注意, 安装python的时候记得看图片, 一定要勾选 add python 3.8 to PATH
+驱动最新链接
+http://npm.taobao.org/mirrors/chromedriver/
 
 B站视频传送链接
 https://www.bilibili.com/video/BV1Tg411c7C5#reply5424884699
