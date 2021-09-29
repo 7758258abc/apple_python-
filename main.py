@@ -110,7 +110,17 @@ for i in range(999):
             # 刷新
             浏览器对象.refresh()
         except:
-            break
+            try:
+                xpath_ = '//*[@id="checkout-container"]/div/div[6]/div[1]/div[2]/div/div/div[2]/div/div/div/fieldset/legend/h2'
+                地址 = 浏览器对象.find_element_by_xpath(xpath_)
+                break
+            except:
+                try:
+                    xpath_ = '//*[@id="rs-checkout-continue-button-bottom"]'
+                    加载 = 浏览器对象.find_element_by_xpath(xpath_)
+                    print('请填写收货地址, 填写完后刷新一次网页, 回到终端点击该句子按下回车')
+                except:
+                    print('网页还在加载中...')
 
     print('有货了!!!')
     浏览器对象.maximize_window()
